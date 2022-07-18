@@ -1,0 +1,81 @@
+<div>
+  <section>
+    <div class="first-line">
+      <div class="col-left">
+        <a href="#">Facultades</a>
+        <a href="#">Centros universitarios</a>
+      </div>
+      <div class="col-right">
+        <a href="#">Gestiones</a>
+        <a href="#">Herramientas y recursos</a>
+      </div>
+    </div>
+    <div class="second-line">
+      <div class="col-left">
+        <a href="#">Admisiones</a>
+        <a href="#">Acerca de la universidad</a>
+      </div>
+      <div class="col-right">
+        <a href="#">Directorio</a>
+        <a href="#">Ayuda</a>
+      </div>
+    </div>
+    <div class="sep">
+      <a href="">
+        <img src="/icons/umg.png" class="logo" alt="" width="140">
+      </a>
+    </div>
+  </section>
+</div>
+
+<style>
+  section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+    color: #fff;
+    margin: 3px 0;
+    font-size: 1.2rem;
+    font-family: "Cabo-Rounded-Italic";
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+
+  .first-line {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+
+  .col-left {
+    background-color: var(--blue);
+    padding: 0 20%;
+    
+  }
+
+  .col-right {
+    background-color: var(--blue-light);
+    padding: 0 20%;
+  }
+
+  .col-left, .col-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sep {
+    height: 80px;
+    position: absolute;
+    left: 43.5%;
+    background-color: var(--blue-middle);
+    padding: 20px 30px 0;
+    border-radius: 0% 0% 100px 100px / 0 0 50px 50px;
+    z-index: 0;
+  }
+</style>
