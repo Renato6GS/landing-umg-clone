@@ -1,0 +1,91 @@
+<header>
+  <div><h2>cita</h2></div>
+  <img src="/images/top.jpg" class="top" alt="Banner">
+  <img src="/images/cite.png" class="cite-image" alt="">
+  <img src="/images/virtual.png" class="virtual" alt="">
+  <div class="cite-container">
+    <cite class="cite">"Te alabaré con integridad de corazón, cuando aprende tus justos juicios."</cite>
+    <span>Salmos 119:7 |NVI <span>Powered by <a href="https://www.biblegateway.com/">BibleGateway.com</a></span></span>
+  </div>
+</header>
+
+<style>
+  header {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+
+  .top {
+    position: absolute;
+    top: 88px;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .cite-image {
+    position: absolute;
+    width: 48%;
+    top: 88vh;
+    left: 50vw;
+    z-index: 1;
+  }
+
+  .virtual {
+    position: absolute;
+    width: 40%;
+    top: 48vh;
+    left: 18vw;
+  }
+
+  .cite-container {
+    padding: 10px;
+    position: relative;
+    background: rgba(255, 255, 255, .8);
+    margin-left: 30px;
+    position: absolute;
+    top: 30vh;
+    left: 33vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .cite-container:after {
+    content: "";
+    position: absolute;
+    left: -29px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    transform: rotate(180deg);
+    border-left: 30px solid rgba(255, 255, 255, .8);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }
+
+  .cite-container:before {
+    content: "";
+    position: absolute;
+    right: -29px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 30px solid rgba(255, 255, 255, .8);;
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+  }
+
+  .cite, span, a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+  }
+
+  a {
+    color: #37aae1;
+    text-decoration: none;
+  }
+</style>
