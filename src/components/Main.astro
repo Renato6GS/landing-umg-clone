@@ -1,4 +1,5 @@
 ---
+import Cu from "./Cu.astro";
 import MainDescription from "./MainDescription.astro";
 import MainHeader from "./MainHeader.astro";
 import MainInformation from "./MainInformation.astro";
@@ -7,14 +8,16 @@ import MainInformation from "./MainInformation.astro";
 
 <main>
   <MainHeader />
-  <section>
+  <section class="information-section">
     <MainInformation />
     <MainDescription />
   </section>
+  
+  <Cu />
 </main>
 
 <style>
-  section {
+  .information-section {
     margin-top: 130vh;
   }
 </style>
