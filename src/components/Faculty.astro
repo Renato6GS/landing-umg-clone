@@ -1,0 +1,115 @@
+---
+export interface Props {
+	title: string;
+	colorHover: string;
+	href: string;
+  alt: string;
+  image: string;
+}
+const { title, colorHover, href, alt, image } = Astro.props;
+---
+
+<a href={href} class={`faculty ${colorHover}`}>
+  <img src={image} class="thumb" alt={alt}>
+  <span class="description">{title}</span>
+</a>
+
+<style define:vars={{ colorHover }}>
+  :root {
+		--administracion: #fac187;
+    --arquitectura: #abb0ac;
+    --comunicaciones: #7d2b3b;
+    --derecho: #bc2b33;
+    --economicas: #f18f30;
+    --enfermeria: #ffffff;
+    --humanidades: #0879bb;
+    --i2qb3: #2c9fb4;
+    --ingenieria: #818181;
+    --medicina: #fed300;
+    --odontologia: #a788bb;
+    --psicologia: #24a69a;
+    --sistemas: #030406;
+    --teologia: #252a6e;
+	}
+
+  .faculty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .thumb {
+    width: 150px
+  }
+
+  .description {
+    position: absolute;
+    top: 75%;
+    color: var(--orange);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  @media (hover: hover) {
+    .arqHover:hover {
+      background-color: var(--arquitectura);
+    }
+
+    .admonHover:hover {
+      background-color: var(--administracion);
+    }
+
+    .comuHover:hover {
+      background-color: var(--comunicaciones);
+    }
+
+    .ecoHover:hover {
+      background-color: var(--economicas);
+    }
+
+    .dereHover:hover {
+      background-color: var(--derecho);
+    }
+
+    .mediHover:hover {
+      background-color: var(--medicina);
+    }
+
+    .quimHover:hover {
+      background-color: var(--i2qb3);
+    }
+
+    .humaHover:hover {
+      background-color: var(--humanidades);
+    }
+
+    .matHover:hover {
+      background-color: var(--ingenieria);
+    }
+
+    .sistemHover:hover {
+      background-color: var(--sistemas);
+    }
+
+    .odonHover:hover {
+      background-color: var(--odontologia);
+    }
+
+    .psicoHover:hover {
+      background-color: var(--psicologia);
+    }
+
+    .teoHover:hover {
+      background-color: var(--teologia);
+    }
+
+    .faculty:hover > span {
+      color: var(--white)
+    }
+
+  }
+</style>
