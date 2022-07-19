@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+.news-section {
+  width: 100%;
+  max-width: 1200px;
+  height: 750px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+
+.title-news-section {
+  font-family: 'Sinthya', Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  color: var(--orange);
+  font-weight: 100;
+  letter-spacing: 8px;
+  width: 100%;
+  margin: 0;
+}
+
+.ipad {
+  position: absolute;
+  width: 45%;
+  left: 0;
+  top: 0;
+}
+
+.options {
+  background-color: var(--skyblue-light);
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  position: absolute;
+  width: 34%;
+  /* height: 75%; */
+  /* height: 560px; */
+  aspect-ratio: 1 / 1.35;
+
+  /* aspect-ratio: 1; */
+  /* top: 15%; */
+  top: 100px;
+  left: 4.7%;
+  overflow-y: scroll;
+}
+
+.content {
+  width: 50%;
+  /* background-color: red; */
+}
+
+.title {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.link-to-new {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-decoration: none;
+  background-color: var(--skyblue-light);
+  width: 60%;
+  margin-left: 3rem;
+}
+
+.title-new {
+  position: absolute;
+  background-color: var(--skyblue-light);
+  padding: 3px;
+  color: var(--white);
+  top: -30px;
+  right: 0;
+  width: 90%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.description-new {
+  margin: 1rem;
+  text-align: center;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  color: var(--black);
+  line-height: normal;
+  font-size: 1rem;
+  font-style: italic;
+  padding-bottom: 1.5rem;
+}
+
+.options-btn {
+  background-color: transparent;
+  border: none;
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  line-height: 28px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+  color: var(--white);
+  opacity: .7;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .options-btn:hover {
+    opacity: 1;
+  }
+}
