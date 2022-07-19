@@ -1,10 +1,21 @@
 ---
+import MainDescription from "./MainDescription.astro";
 import MainHeader from "./MainHeader.astro";
+import MainInformation from "./MainInformation.astro";
 
 ---
 
 <main>
   <MainHeader />
+  <section>
+    <MainInformation />
+    <MainDescription />
+  </section>
 </main>
 
+<style>
+  section {
+    margin-top: 130vh;
+  }
+</style>
 
