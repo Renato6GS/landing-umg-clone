@@ -1,0 +1,54 @@
+---
+import Faculty from "./Faculty.astro";
+
+---
+
+<section>
+  <h2>Facultades</h2>
+  <div class="gallery">
+    <Faculty title="Arquitectura" colorHover="arqHover" href="https://umg.edu.gt/arquitectura" alt="Arquitectura" image="/images/arquitectura2.png" />
+    <Faculty title="Ciencias de la administración" colorHover="admonHover" href="https://umg.edu.gt/administracion" alt="Ciencias de la administración" image="/images/administracion2.png" />
+    <Faculty title="Ciencias de la comunicación" colorHover="comuHover" href="https://umg.edu.gt/comunicaciones" alt="Comuniaciones" image="/images/comunicaciones2.png" />
+    <Faculty title="Ciencias económicas" colorHover="ecoHover" href="https://umg.edu.gt/economicas" alt="Ciencias económicas" image="/images/economicas22.png" />
+    <Faculty title="Ciencias jurídicas y sociales" colorHover="dereHover" href="https://umg.edu.gt/derecho" alt="Derecho" image="/images/derecho2.png" />
+    <Faculty title="Ciencias médicas y de la salud" colorHover="mediHover" href="https://umg.edu.gt/medicina" alt="Medicina" image="/images/medicina2.png" />
+    <Faculty title="Ciencias químicas y biológicas" colorHover="quimHover" href="https://umg.edu.gt/quimica+biologia" alt="Química" image="/images/quimica2.png" />
+    <Faculty title="Humanidades" colorHover="humaHover" href="https://umg.edu.gt/humanidades" alt="Humanidades" image="/images/humanidades2.png" />
+    <Faculty title="Ingeniería, matemática y ciencias físicas" colorHover="matHover" href="https://umg.edu.gt/ingenieria" alt="Ingeniería" image="/images/ingenieria2.png" />
+    <Faculty title="Ingeniería en sistemas" colorHover="sistemHover" href="https://umg.edu.gt/ingenieria/sistemas" alt="Ingeniería en sistemas" image="/images/sistemas2.png" />
+    <Faculty title="Odontología" colorHover="odonHover" href="https://umg.edu.gt/odontologia" alt="Odontología" image="/images/odontologia2.png" />
+    <Faculty title="Psicología" colorHover="psicoHover" href="https://umg.edu.gt/psicologia" alt="Psicología" image="/images/psicologia2.png" />
+    <Faculty title="Teología" colorHover="teoHover" href="https://umg.edu.gt/teologia" alt="Teología" image="/images/teologia2.png" />
+  </div>
+</section>
+
+<style>
+  section {
+    background: url('/images/bg4.png') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px;
+    margin: 200px 0;
+  }
+
+  h2 {
+    font-family: 'Sinthya', Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    color: var(--orange);
+    font-weight: 100;
+    letter-spacing: 8px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 70px auto 30px;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 90px;
+  }
+</style>
