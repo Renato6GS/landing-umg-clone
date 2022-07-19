@@ -1,0 +1,149 @@
+<div class="description-container">
+  <article>
+    <img src="/icons/miumg-i.png" class="head-image" alt="">
+    <img src="/icons/target.png" class="target-image" alt="">
+    <img src="/icons/miumg1.png" alt="" width="100px">
+    <ul>
+      <a href="https://umg.edu.gt/info/miumg">
+        <li>Información General</li>
+      </a> 
+    </ul>
+  </article>
+  <article>
+    <img src="/icons/bblearn.png"  class="head-image" alt="">
+    <img src="/icons/target.png" class="target-image" alt="">
+    <h3>CANVAS</h3>
+    <ul>
+      <a href="https://umg.edu.gt/canvas">
+        <li>Plataforma Canvas</li>
+      </a>
+    </ul>
+  </article>
+  <article>
+    <img src="/icons/email.png"  class="head-image" alt="">
+    <img src="/icons/target.png" class="target-image" alt="">
+    <h3>EMAIL Y CALENDARIO</h3>
+    <ul>
+      <a href="https://umg.edu.gt/google-apps">
+        <li>Google Apps para UMG</li>
+      </a>
+      <a href="https://umg.edu.gt/office-365">
+        <li>Office 365</li>
+      </a>
+    </ul>
+  </article>
+  <article>
+    <img src="/icons/msteams.png"  class="head-image" alt="">
+    <img src="/icons/target.png" class="target-image" alt="">
+    <h3>MICROSOFT TEAMS</h3>
+    <ul>
+      <a href="https://umg.edu.gt/herramientas-videollamadas#teams">
+        <li>Microsoft Teams</li>
+      </a>
+    </ul>
+  </article>
+  <article>
+    <img src="/icons/msteams.png"  class="head-image" alt="">
+    <h3>ZOOM</h3>
+    <ul>
+      <a href="https://umg.edu.gt/herramientas-videollamadas#zoom">
+        <li>Zoom</li>
+      </a>
+    </ul>
+  </article>
+</div>
+
+<style>
+  img {
+    vertical-align: top;
+  }
+
+  .description-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  article {
+    padding: 0 10px;
+    border-left: 3px dotted var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  article:first-child {
+    border-left: none;
+  }
+
+  article::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-bottom: 3px dotted var(--green);
+    top: 18%;
+    left: 50%;
+  }
+
+  article:last-child::before {
+    border-bottom: none;
+  }
+
+  article:last-child {
+    padding-left: 40px;
+  }
+
+  .description-container .head-image {
+    width: 96px;
+    height: 96px;
+    z-index: 1;
+
+  }
+
+  .target-image {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 16%;
+    right: -11px;
+    z-index: 1;
+  }
+
+  h3 {
+    padding: 0 20px;
+    font-family: "Futura Bold";
+    margin: 0;
+    color: var(--blue-marine);
+    font-size: 1rem;
+  }
+
+  ul {
+    margin-top: 25px;
+    padding: 0 40px 0 0;
+    text-align: left;
+  }
+
+  li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--gray);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  li::before {
+    content: "•";
+    color: red;
+    font-size: 2.4rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+</style>

@@ -1,0 +1,66 @@
+<div class="information-container">
+  <a href="">
+    <img src="/images/bopt.png" alt="">
+    <span class="admissions">ADMISIONES</span>
+  </a>
+  <a href="">
+    <img src="/images/bopt.png" alt="">
+    <span class="pay">PAGAR LA UNIVERSIDAD</span>
+  </a>
+  <a href="">
+    <img src="/images/bopt.png" alt="">
+    <span class="negotiations">GESTIONES</span>
+  </a>
+</div>
+
+<style>
+  .information-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  img {
+    width: 300px;
+    vertical-align: top;
+    margin: 0;
+  }
+
+  a {
+    padding: 0;
+    position: relative;
+  }
+
+  span {
+    margin: 0;
+    font-family: "Futura Bold", sans-serif;
+    color: var(--skyblue);
+    font-size: 1.25rem;
+    position: absolute;
+    top: 55%;
+    text-align: center;
+  }
+  
+  @media (hover: hover) {
+    a:hover > span {
+      color: var(--skyblue-deep)
+    }
+  }
+
+  .admissions {
+    left: 28%;
+  }
+
+  .pay {
+    left: 25%;
+    width: 50%;
+    line-break: normal;
+  }
+
+  .negotiations {
+    left: 30%;
+    text-align: center;
+  } 
+</style>
