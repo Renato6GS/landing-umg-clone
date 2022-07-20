@@ -34,6 +34,7 @@ const { title } = Astro.props as Props;
 		--gray: #4D5A6A;
 		--black: #1D1D1B;
 		--skyblue-light: #2DAAE1;
+		--blue-footer: #12527c;
 	}
 
 	* {
@@ -64,7 +65,7 @@ const { title } = Astro.props as Props;
 	}
 
 	@font-face {
-    font-family: "Rototo";
+    font-family: "Rototo Light";
     src: url("/fonts/Roboto.l.woff2") format("woff2");
 	}
 
@@ -81,5 +82,10 @@ const { title } = Astro.props as Props;
 	@font-face {
     font-family: "Oswald";
     src: url("/fonts/Oswald.r.woff2") format("woff2");
+	}
+
+	@font-face {
+    font-family: "Caviar";
+    src: url("/fonts/CaviarDreams.b.woff2") format("woff2");
 	}
 </style>
