@@ -1,3 +1,136 @@
-<header>
-  <h1>FOOTER</h1>
-</header>
+<footer>
+  <div class="container">
+    <div>
+      <h4 class="title">Universidad</h4>
+      <ul>
+        <li><a href="https://umg.edu.gt/nosotros">Nosotros</a></li>
+        <li><a href="https://umg.edu.gt/autoridades">Autoridades</a></li>
+        <li><a href="https://umg.edu.gt/acreditacion">Acreditación</a></li>
+        <li><a href="https://umg.edu.gt/50">50 aniversario</a></li>
+        <li><a href="https://umg.edu.gt/egresados">Fraternidad de Egresados</a></li>
+        <li><a href="https://umg.edu.gt/directorio-facultad">Directorio</a></li>
+        <li><a href="https://umg.edu.gt/tour">Tour Virtual</a></li>
+      </ul>
+    </div>
+    <div>
+      <div>
+        <h4 class="title">Academia</h4>
+        <ul>
+          <li><a href="https://umg.edu.gt/#facultades">Facultades</a></li>
+          <li><a href="https://umg.edu.gt/posgrados">Dirección de Posgrados</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="title">Investigación</h4>
+        <ul>
+          <li><a href="https://cite.umg.edu.gt/">CITE</a></li>
+          <li><a href="https://i2qb3.umg.edu.gt/">I2QB3</a></li>
+          <li><a href="https://in3.umg.edu.gt/">IN3</a></li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <h4 class="title">Centros universitarios</h4>
+      <ul>
+        <li><a href="https://umg.edu.gt/cu#GU">Región Metropolitana</a></li>
+        <li><a href="https://umg.edu.gt/cu#N">Región Norte</a></li>
+        <li><a href="https://umg.edu.gt/cu#NE">Región Nor-oriente</a></li>
+        <li><a href="https://umg.edu.gt/cu#SE">Región Sur-oriente</a></li>
+        <li><a href="https://umg.edu.gt/cu#Alti">Región Central</a></li>
+        <li><a href="https://umg.edu.gt/cu#SO">Región Sur-occidente</a></li>
+        <li><a href="https://umg.edu.gt/cu#NO">Región Nor-occidente</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="title">Vida estudiantil</h4>
+      <ul>
+        <li><a href="https://umg.edu.gt/calendario">Calendario Académico</a></li>
+        <li><a href="https://umg.edu.gt/deportes">Deportes</a></li>
+        <li><a href="https://umg.edu.gt/biblioteca">Bibliotecas</a></li>
+        <li><a href="https://radio.umg.edu.gt/">Radio</a></li>
+        <li><a href="https://umg.edu.gt/capellania">Capellanía</a></li>
+        <li><a href="https://umg.edu.gt/empleos">Bolsa de Empleo</a></li>
+        <li><a href="https://umg.edu.gt/bicentenario">Bicentenario de Centroamérica</a></li>
+        <li><a href="https://covid19.umg.edu.gt/">Respuesta a COVID-19</a></li>
+        <li><a href="https://umg.edu.gt/enactus">Enactus</a></li>
+      </ul>
+    </div>
+  </div>
+  <nav>
+    <a href="https://apps.apple.com/gt/app/appumg/id1579704106"><img src="/icons/_appstore.png" alt="Descargar aplicación desde AppStore"></a>
+    <a href="https://play.google.com/store/apps/details?id=umg.app.android"><img src="/icons/_playstore.png" alt="Descargar aplicación desde PlayStore"></a>
+    <a href="https://appgallery.cloud.huawei.com/ag/n/app/C104256077?locale=es_US&source=appshare&subsource=C104256077"><img src="/icons/_appgallery.png" alt="Descargar aplicación desde AppGallery"></a>
+    <a href="https://github.com/Renato6GS/landing-umg-clone"><img class="github" src="/icons/github-logo_icon-icons.com_73546.svg" alt="Link a repositorio"></a>
+  </nav>
+</footer>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  footer {
+    background-color: var(--blue-footer);
+    widows: 100%;
+    margin-top: 4rem;
+    padding: 1rem 0 5rem;
+  }
+
+  .container {
+    widows: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 1rem;
+    gap: 7rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .title {
+    width: 90%;
+    line-height: 1.25rem;
+    color: var(--orange);
+    font-size: 1.25rem;
+    font-family: 'Caviar', 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: .3rem;
+  }
+
+  a {
+    color: var(--white);
+    text-decoration: none;
+    font-family: "Rototo Light", Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+  }
+
+  nav {
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .github {
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(188deg) brightness(105%) contrast(101%);
+  }
+</style>

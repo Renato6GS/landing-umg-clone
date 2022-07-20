@@ -16,8 +16,5 @@
     "preact": "^10.10.0",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.1.1"
-  },
-  "dependencies": {
-    "astro-imagetools": "^0.6.10"
   }
 }
